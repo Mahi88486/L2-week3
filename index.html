@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pexels API Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <div class="parent">
+    <div class="child">
+      <p>SUPER SALE UP To 40% OFF</p>
+    </div>
+    <div class="child1">
+      <ul class="ullistflex">
+        <li>SHOP</li>
+        <li>COMMUNITY</li>
+      </ul>
+      <img src="https://res.cloudinary.com/dfsppvj1s/image/upload/v1711526121/Registered_Logo_PNG-02_4435x_1_i1b7wx.png" alt="" />
+      <div class="iconssearch">
+        <img
+          src="https://res.cloudinary.com/dfsppvj1s/image/upload/v1711526122/Link_SVG_z5sm23.png"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfsppvj1s/image/upload/v1711526121/Link_SVG_1_bzlq2f.png"
+          alt=""
+        />
+        <img
+          src="https://res.cloudinary.com/dfsppvj1s/image/upload/v1711526121/Link_SVG_2_sfjii0.png"
+          alt=""
+        />
+      </div>
+    </div>
+   
+    <div class="poster-path">
+        <img class="poster-image" src="https://res.cloudinary.com/dfsppvj1s/image/upload/v1711526123/Poster_s2lhrv.png" />
+        <div class="poster-content">
+          <h1 class="poster-heading">Stock photos</h1>
+          <p class="poster-desc">
+            John Wick is on the run after killing a member of the international
+            assassins' guild, and with a $14 million price tag on his head, he
+            is the target of hit men and women everywhere
+          </p>
+          <button class="poster-button">
+            <img src="https://res.cloudinary.com/dfsppvj1s/image/upload/v1711527683/Play_lakumw.png" />EXPLORE
+          </button>
+        </div>
+      </div>
+      
+          <!-- <div class="recommend-content">
+            <h1 class="recommed-title">Alt</h1
+            <p class="category">Photographer</p>
+            <button class="poster-button">EXPLORE MORE</button>
+          </div>
+        </div>
+        <div class="parent-recommed-movie">
+          <h1 class="recommended-movies-heading">Similar Results</h1>
+          <section
+            class="splide"
+            id="carousel1"
+            aria-label="Splide Basic HTML Example"
+          >
+            <div class="splide__track">
+              <ul class="splide__list" id="carouselList1"></ul>
+            </div>
+          </section>
+        </div>
+        <div class="favorite-movies-section">
+          <div class="filter-section">
+            <h1 class="filter-movies-heading">Favorites List</h1>
+            <select class="drop-down-options" id="dropDown">
+              <option class="option" value="sort">Sort</option>
+              <option class="option" value="name">Sort By Name</option>
+              <option class="option" value="year">Sort By Year</option>
+            </select>
+          </div>
+          <section
+            class="splide"
+            id="carousel2"
+            aria-label="Splide Basic HTML Example"
+          >
+            <div class="splide__track">
+              <ul class="splide__list" id="carouselList2"></ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    
+ -->
+
+
+ <!-- <div class="parent-section">
+        <div class="child-section">
+          <input
+            type="search"
+            class="input-box"
+            placeholder="What do you want to watch?"
+            id="fieldsearch"
+            name="search"
+            onkeydown="CuratedPhotos()"
+          />
+          
+        </div>
+        <div class="search-results" id="searchResultsSection">
+          <img
+            class="search-movie"
+            src="https://m.media-amazon.com/images/I/61Qe0euJJZL.jpg"
+            alt="avatr"
+          /> -->
+
+  <!-- Search Section -->
+  <section id="search-section">
+     <input type="search" id="search-input" placeholder="What do you want to watch?">
+    <button id="search-btn"><img src="https://res.cloudinary.com/dfsppvj1s/image/upload/v1711526121/Link_SVG_1_bzlq2f.png" alt="" srcset=""></button>
+    <div id="search-results">
+
+    </div>
+  </section>
+
+  <!-- Similar Results Section -->
+  <section id="similar-results">
+    <h2 class="similar">Similar Results</h2>
+    <div id="similar-results-slider" class="splide">
+        <div class="splide__track">
+          <ul class="splide__list"></ul>
+        </div>
+      </div>
+    <div id="similar-results-container" class="image-container"></div>
+  </section>
+
+  <!-- Wishlist Section -->
+  <section id="wishlist">
+    <h2>Favourite's list</h2>
+    <div id="wishlist-slider" class="splide">
+        <div class="splide__track">
+          <ul class="splide__list"></ul>
+        </div>
+      </div>
+    <ul id="wishlist-items"></ul>
+  </section>
+
+  <script
+      src="https://kit.fontawesome.com/21e785dd6b.js"
+      crossorigin="anonymous"
+    ></script>
+  <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+  <script src="script.js"></script>
+</body>
+</html>
